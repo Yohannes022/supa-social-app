@@ -23,8 +23,8 @@ const Login: FC = () => {
             return;
         }
 
-        let email = emailRef.current;
-        let password = passwordRef.current;
+        let email = emailRef.current.trim();
+        let password = passwordRef.current.trim();
 
         setLoading(true);
 

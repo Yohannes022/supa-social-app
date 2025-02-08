@@ -26,14 +26,14 @@ const EditProfile = () => {
 
     const onPickImage = async () => {
         let result = await ImagePicker.launchImageLibraryAsync({
+            mediaTypes: ['images', 'videos'],
             allowsEditing: true,
             aspect: [4, 3],
-            mediaTypes: ImagePicker.MediaTypeOptions.All,
             quality: 1,
         });
 
         if (!result.canceled) {
-            setUser((prev) => ({ ...prev, image: result.assets[0].uri }));
+            setUser({ ...user, image: result.assets[0]?.uri || null});
         }
     };
 
@@ -80,6 +80,8 @@ const EditProfile = () => {
             });
         }
     }, [currentUser]);
+
+    let imageSource = user.image && typeof user.image == 'object'? user.image.uri : getUserImageSrc(user.image);
 
     return (
         <ScreenWrapper bg={'white'}>

@@ -24,9 +24,9 @@ const SignUp: FC = () => {
             return;
         }
 
-        let email = emailRef.current;
-        let name = nameRef.current;
-        let password = passwordRef.current;
+        let email = emailRef.current.trim();
+        let name = nameRef.current.trim();
+        let password = passwordRef.current.trim();
 
         setLoading(true);
 

@@ -15,7 +15,7 @@ export const getUserImageSrc = (imagePath?: string | null) => {
 export const getSupabaseFileUrl = (filePath?: string) => {
     if (filePath) {
         return {
-            uri: `${supabaseUrl}/storage/v1/object/public/uploads/${filePath}`,
+            uri: `${supabaseUrl}/storage/v1/object/public/upload/${filePath}`,
         };
     } else {
         return null;

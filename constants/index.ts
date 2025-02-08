@@ -1,4 +1,4 @@
-export const supabaseUrl = 'https://smzxyvujhuehlwwnuvyz.supabase.co';
-export const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNtenh5dnVqaHVlaGx3d251dnl6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQwODA5NzksImV4cCI6MjA0OTY1Njk3OX0.mKZVH6_IxxPpC0no-0nzrzyjweiz183X1jY-Ecw2g7g';
+export const supabaseUrl = 'https://badaeorqdacyrprbxgln.supabase.co';
+export const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJhZGFlb3JxZGFjeXJwcmJ4Z2xuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzg5NjMyNzEsImV4cCI6MjA1NDUzOTI3MX0.VGmV9heLdsqOY9crvWmb5rk5wKaFJSytegH-XCAc6Xw';
 
 export * from './theme';
